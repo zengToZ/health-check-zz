@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+enum Stats {valid, invalid, unknown};
+
 void check_func(int args[]){
   std::vector<int> v;
   for(auto a : args){
@@ -10,8 +12,10 @@ void check_func(int args[]){
   }
 }
 
-bool valid_id(int id){
-  return id > 1000;
+Stats valid_id(int id){
+  if (id > 1000) return valid;
+  else if (id > 0) return invalid;
+  else return unknown;
 }
 
 int get_id(int key){
