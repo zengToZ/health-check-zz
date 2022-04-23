@@ -2,6 +2,7 @@
 
 void check_func(int args[]){
   for(auto a : args){
+    // to print
     cout<<a<<endl;  
   }
 }
