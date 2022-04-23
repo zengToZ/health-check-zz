@@ -10,6 +10,10 @@ void check_func(int args[]){
   }
 }
 
+bool valid_id(int id){
+  return id > 1000;
+}
+
 int get_id(int key){
-  return key*100+ (int)key%2;
+  return key*1000+ (int)key%3;
 }
