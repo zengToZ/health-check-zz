@@ -13,11 +13,11 @@ void check_func(int args[]){
 }
 
 Stats valid_id(int id){
-  if (id > 1000) return valid;
+  if (id > 100) return valid;
   else if (id > 0) return invalid;
   else return unknown;
 }
 
 int get_id(int key){
-  return key*1000+ (int)key%3;
+  return key*100+ (int)key%3;
 }
