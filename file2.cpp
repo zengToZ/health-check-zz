@@ -20,5 +20,6 @@ Stats valid_id(int id){
 
 int get_id(int key){
   if (key > 10000) return -1;
+  else if (key < 10) return -1;
   return key*100+ (int)key%3;
 }
