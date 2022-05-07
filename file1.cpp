@@ -6,9 +6,9 @@ void print(){
 
 int testapp(int testID){
   // pending 
-  int res = 0;
-  res += (int) testID/5;
-  return res;
+  int r = 1;
+  r += testID;
+  return r;
 }
 
 int main(){
