@@ -23,3 +23,7 @@ int get_id(int key){
   else if (key < 10) return -1;
   return key*100+ (int)key%3;
 }
+
+void* test_out(int& i){
+  int j = get_id(i);
+}
